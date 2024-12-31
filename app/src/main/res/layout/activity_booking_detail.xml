@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:indeterminateTint="@color/accent" />
+
+        <RelativeLayout
+            android:id="@+id/bookingDetailLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:context=".activities.BookingDetailActivity">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/toolbarCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/backBtn"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_arrow_back" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="Booking Detail"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="42dp">
+
+                        <TextView
+                            android:id="@+id/bookingForName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mr. Ragvan"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/bookingForGenderAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Male, 32 yrs"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/bookingForName"
+                            app:layout_constraintTop_toBottomOf="@id/bookingForName" />
+
+                        <TextView
+                            android:id="@+id/scheduleAt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="09:00 AM"
+                            android:textColor="@color/accent"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/amountPaid" />
+
+                        <TextView
+                            android:id="@+id/amountPaidTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount Paid"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintStart_toStartOf="@id/bookingForName"
+                            app:layout_constraintTop_toBottomOf="@id/bookingForGenderAge" />
+
+                        <TextView
+                            android:id="@+id/amountPaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Rs.."
+                            android:textColor="@color/dark_grey"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/bookingForName"
+                            app:layout_constraintTop_toBottomOf="@id/amountPaidTV" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/agoraLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbarCard"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="-35dp"
+                android:elevation="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/vidCallBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="Video Call"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/audCallBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="Audio Call"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:padding="0dp"
+                    android:text="Message"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/prescLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agoraLay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="22dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_prescription"
+                    app:tint="@color/accent" />
+
+                <TextView
+                    android:id="@+id/presc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Prescription"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/therapyLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prescLay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="22dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_therapies"
+                    app:tint="@color/accent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Therapy"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/therapyLay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="22dp">
+
+                <ImageView
+                    android:id="@+id/icHelpSupport"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_help"
+                    app:tint="@color/accent" />
+
+                <TextView
+                    android:id="@+id/helpSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Help &amp; Support"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

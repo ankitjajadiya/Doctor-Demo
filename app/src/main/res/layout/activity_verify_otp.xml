@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/auth_background"
+        tools:context=".login.OtpActivity">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dip"
+            android:layout_marginTop="40dip"
+            android:text="Enter OTP"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_alignStart="@id/tv_title"
+            android:layout_marginTop="20dp"
+            android:text="Otp sent to"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dip"
+            android:textColor="@color/white"
+            app:bar_active_color="@color/white"
+            app:bar_enabled="true"
+            app:bar_height="2dp"
+            app:height="40dp"
+            app:length="6"
+            app:otp_text_size="24dp"
+            app:width="30dp" />
+
+        <TextView
+            android:id="@+id/tv_resend_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginEnd="20dip"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_resend_timer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dip"
+            android:layout_marginTop="20dip"
+            android:layout_marginEnd="20dip"
+            android:text="@string/label_otp3"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dip"
+            android:layout_marginBottom="50dip"
+            android:background="@drawable/bg_round"
+            android:padding="10dip"
+            android:src="@drawable/ic_arrow_right"
+            app:tint="@color/white">
+
+        </ImageView>
+    </RelativeLayout>
+</layout>

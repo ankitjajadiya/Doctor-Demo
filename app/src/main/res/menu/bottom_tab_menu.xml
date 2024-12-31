@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_mybooking"
+        android:enabled="true"
+        android:icon="@drawable/bottom_booking_selector"
+        android:title="Bookings"
+        app:showAsAction="ifRoom" />
+
+    <item
+
+        android:id="@+id/navigation_profile"
+        android:enabled="true"
+        android:icon="@drawable/bottom_profile_selector"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+
+</menu>

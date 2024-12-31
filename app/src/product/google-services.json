@@ -1,0 +1,214 @@
+{
+  "project_info": {
+    "project_number": "1086373455551",
+    "firebase_url": "https://ayursh-production-default-rtdb.firebaseio.com",
+    "project_id": "ayursh-production",
+    "storage_bucket": "ayursh-production.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086373455551:android:03d9e32e3439b83f35c80a",
+        "android_client_info": {
+          "package_name": "com.ayrush.ayrush_therapist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFcL_GJfzvrQxIcy8yYwa2f1837hJz_c0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086373455551:android:93da53710e91ded235c80a",
+        "android_client_info": {
+          "package_name": "com.ayursh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFcL_GJfzvrQxIcy8yYwa2f1837hJz_c0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086373455551:android:3ecd47c71fdf592935c80a",
+        "android_client_info": {
+          "package_name": "com.ayursh.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFcL_GJfzvrQxIcy8yYwa2f1837hJz_c0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086373455551:android:71dc0c09ffb9aa6635c80a",
+        "android_client_info": {
+          "package_name": "com.ayursh.android.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFcL_GJfzvrQxIcy8yYwa2f1837hJz_c0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086373455551:android:f8d234d3616fc2f935c80a",
+        "android_client_info": {
+          "package_name": "com.ayursh.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFcL_GJfzvrQxIcy8yYwa2f1837hJz_c0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086373455551:android:aaec038283390e3835c80a",
+        "android_client_info": {
+          "package_name": "com.ayursh.therapist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFcL_GJfzvrQxIcy8yYwa2f1837hJz_c0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086373455551:android:9b091a291bf85aad35c80a",
+        "android_client_info": {
+          "package_name": "com.ayursh.therapist.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFcL_GJfzvrQxIcy8yYwa2f1837hJz_c0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086373455551-gthrufna9as7k4dkk6djtv6u458eg84s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

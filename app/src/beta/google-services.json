@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "212054367214",
+    "firebase_url": "https://ayurshdevfirebase-default-rtdb.firebaseio.com",
+    "project_id": "ayurshdevfirebase",
+    "storage_bucket": "ayurshdevfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212054367214:android:055e29f11cf610b11eccff",
+        "android_client_info": {
+          "package_name": "com.ayursh.android.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212054367214-nnnqtdi5eda58547monli1mjc39c9tiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtVFuPawOAVjCqhAQGOu_AJvAABumStDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212054367214-nnnqtdi5eda58547monli1mjc39c9tiv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "212054367214-938sjhs9fmrn0suvo64r4jjin88esehb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ayursh.ios"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212054367214:android:994100d47c2963671eccff",
+        "android_client_info": {
+          "package_name": "com.ayursh.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212054367214-nnnqtdi5eda58547monli1mjc39c9tiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtVFuPawOAVjCqhAQGOu_AJvAABumStDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212054367214-nnnqtdi5eda58547monli1mjc39c9tiv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "212054367214-938sjhs9fmrn0suvo64r4jjin88esehb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ayursh.ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ayursh.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BAC"/>
+
+
+    <application
+
+        android:name=".utils.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoctorApp"
+        android:usesCleartextTraffic="true"
+        tools:ignore="Instantiatable">
+<!--        <service android:name=".utils.ServiceApp"-->
+<!--            android:permission="android.permission.BIND_SCREENING_SERVICE"-->
+<!--            android:stopWithTask="false"/>-->
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <service
+            android:name=".activities.service.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+<!--        <activity android:name=".activities.PdfViewerActivity"></activity>-->
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/edit_text_border" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".NotificationActivity"
+            android:taskAffinity=""
+            android:excludeFromRecents="true">
+        </activity>
+        <activity android:name=".activities.Prescription" />
+        <activity android:name=".activities.FullImageActivity" />
+        <activity android:name=".activities.BookingDetailActivity" />
+        <activity
+            android:name=".activities.agora.AudioCallActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.agora.VideoCallActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.agora.CallingNotificationActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".activities.agora.ChatActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.auth.VerifyOtpActivity" />
+        <activity
+            android:name=".activities.auth.SignUpActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activities.auth.LoginActivity" />
+        <activity android:name=".activities.IntroActivity" />
+        <activity android:name=".activities.DisplayNotification"/>
+        <activity android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+     <service
+            android:name=".utils.Restarter"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/bg1_splash" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/accent" />
+
+    </application>
+
+</manifest>

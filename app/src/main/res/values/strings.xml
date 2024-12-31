@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Ayursh Doctor Partner</string>
+    <string name="agora_app_id">99c2e8c1d07141cfab1f63e8d5b02363</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_login2">Enter your registered mobile number to login</string>
+    <string name="label_login1">Login</string>
+    <string name="label_mobile_no">Mobile No.</string>
+    <string name="label_login3">New User? <b><font color="#C4662F">Sign Up</font></b></string>
+    <string name="label_signup1">Sign Up</string>
+    <string name="label_signup2">Please share the following details</string>
+    <string name="label_signup_fname">First Name</string>
+    <string name="label_signup_lname">Last Name</string>
+    <string name="label_signup_email">Email</string>
+    <string name="label_signup_mobile">Mobile</string>
+    <string name="label_signup_gender">Gender</string>
+    <string name="label_signup_exp">Experience</string>
+    <string name="label_signup_cons_fee">Consultation Fee</string>
+    <string name="label_signup_dob">D.O.B</string>
+    <string name="label_signup_clinic_assoc">Any Clinic Associated ?</string>
+    <string name="label_signup_address">Address</string>
+    <string name="label_signup_qual">Qualification</string>
+    <string name="terms">By creating an account you agree to all</string>
+    <string name="terms2"><font color="#C4662F"> T &amp; C </font>&amp; <font color="#C4662F">Privacy Policy</font></string>
+    <string name="label_signup_exist">Existing User? <b><font color="#C4662F">Login</font></b></string>
+    <string name="field_required">Field Required</string>
+    <string name="valid_email">Enter valid email</string>
+    <string name="label_otp3">Didn’t get the code? <b><font color="#C4662F">Resend</font></b></string>
+    <string name="label_signup_expertise">Expertise in</string>
+    <string name="channel_name">Incoming Call</string>
+    <string name="channel_description">Hang Up</string>
+    <string name="msg_token_fmt">""</string>
+
+    <array name="Expertise">
+        <item>Cervical Spondylosis</item>
+        <item>Sciatica</item>
+        <item>Musculoskeletal Disorders</item>
+        <item>Head aches</item>
+        <item>Hormonal Issues</item>
+        <item>PCOD</item>
+        <item>Gynaecological issues</item>
+        <item>Arthritis</item>
+        <item>Hair Fall</item>
+        <item>Skin issues</item>
+        <item>Psoriasis</item>
+        <item>Obesity</item>
+        <item>Vericose Veins</item>
+        <item>Hypertension</item>
+        <item>Diabetes</item>
+        <item>Lifestyle Disorders</item>
+        <item>Thyroid issues</item>
+        <item>Neurological issues</item>
+        <item>Anxiety</item>
+        <item>Depression</item>
+        <item>Respiratory Issues</item>
+        <item>Asthma</item>
+        <item>Allergy</item>
+        <item>Insomnia</item>
+    </array>
+</resources>
