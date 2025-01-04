@@ -38,11 +38,6 @@ android {
         }
 
         release {
-            storeFile file(project.hasProperty('storeFile') ? project.storeFile : "/Users/harsh/Documents/Ankit/doctor-app/app/doctor-app-keystore.jks")
-            storePassword project.keystorePassword
-            keyAlias project.keyAlias
-            keyPassword project.keyPassword
-
             minifyEnabled true
             shrinkResources true
             debuggable false
