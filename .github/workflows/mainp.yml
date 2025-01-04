@@ -1,9 +1,9 @@
 # Workflow name
-name: Build Prod
+name: Build Dev
 on:
   push:
     branches:
-      - master
+      - dev
 # Where will they run
 jobs:
   build:
@@ -13,11 +13,11 @@ jobs:
       ## Checkout our repository ###
       - name: Checkout
         uses: actions/checkout@v2.3.3
-        
+
       - name: Set up our JDK environment
         uses: actions/setup-java@v1.4.3
         with:
-          java-version: 17
+          java-version: 1.8
 
       ## Build all our Build Types at once ##
       - name: Build all artifacts
@@ -28,13 +28,13 @@ jobs:
           wrapper-cache-enabled: true
           dependencies-cache-enabled: true
           configuration-cache-enabled: true
-          arguments: assembleProductRelease
+          arguments: assembleBetaRelease
       - uses: r0adkll/sign-android-release@v1
         name: Sign app APK
         # ID used to access action output
         id: sign_app
         with:
-          releaseDirectory: app/build/outputs/apk/product/release
+          releaseDirectory: app/build/outputs/apk/beta/release
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
           alias: ${{ secrets.ANDROID_ALIAS }}
           keyStorePassword: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
@@ -45,4 +45,4 @@ jobs:
           token: ${{ secrets.SLACK_CI_SECRET }}
           path: ${{steps.sign_app.outputs.signedReleaseFile}}
           channel: mobile-app-ci
-          filename: doctor-app-prod.apk
+          filename: doctor-app-dev.apk

@@ -13,7 +13,8 @@ jobs:
       ## Checkout our repository ###
       - name: Checkout
         uses: actions/checkout@v2.3.3
-        
+
+
       - name: Set up our JDK environment
         uses: actions/setup-java@v1.4.3
         with:
@@ -46,3 +47,6 @@ jobs:
           path: ${{steps.sign_app.outputs.signedReleaseFile}}
           channel: mobile-app-ci
           filename: doctor-app-prod.apk
+
+
+
