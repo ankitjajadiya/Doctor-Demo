@@ -20,6 +20,14 @@ jobs:
         with:
           java-version: 17
 
+      ## Install Android Build Tools ##
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v2
+        with:
+          api-level: 35
+          build-tools: "35.0.0"
+          target: "android-35"
+          
       ## Build all our Build Types at once ##
       - name: Build all artifacts
         id: buildAllApks
@@ -30,6 +38,7 @@ jobs:
           dependencies-cache-enabled: true
           configuration-cache-enabled: true
           arguments: assembleProductRelease
+          
       - uses: r0adkll/sign-android-release@v1
         name: Sign app APK
         # ID used to access action output
@@ -40,10 +49,3 @@ jobs:
           alias: ${{ secrets.ANDROID_ALIAS }}
           keyStorePassword: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
-#      - name: Upload to slack step
-#        uses: adrey/slack-file-upload-action@1.0.5
-#        with:
-#          token: ${{ secrets.SLACK_CI_SECRET }}
-#          path: ${{steps.sign_app.outputs.signedReleaseFile}}
-#          channel: mobile-app-ci
-#          filename: doctor-app-prod.apk
