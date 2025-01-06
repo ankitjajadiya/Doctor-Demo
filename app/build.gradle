@@ -20,12 +20,6 @@ android {
         ndk.abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
         buildConfigField "String", "BASE_URL", '"https://prod.ayursh.com/"'
     }
-
-
-      lint {
-          baseline = file("lint-baseline.xml")
-      }
-
     
     buildTypes {
         debug {
