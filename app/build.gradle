@@ -21,12 +21,6 @@ android {
         buildConfigField "String", "BASE_URL", '"https://prod.ayursh.com/"'
     }
 
-
-      lint {
-          baseline = file("lint-baseline.xml")
-      }
-
-    
     buildTypes {
         debug {
             minifyEnabled false
