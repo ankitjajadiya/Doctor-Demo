@@ -117,7 +117,6 @@
                 android:layout_height="52dp"
                 android:background="@drawable/bg_round"
                 android:backgroundTint="@color/red"
-                android:onClick="onLeaveChannelClicked"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_call"
                 app:tint="@color/mc_color"
