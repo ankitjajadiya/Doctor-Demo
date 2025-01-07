@@ -48,7 +48,7 @@ class BookingDetailActivity : AppCompatActivity() {
         super.onResume()
         getBookingDetail()
     }
-    @RequiresApi(Build.VERSION_CODES.O)
+    @SuppressLint("NewApi")
     private fun init() {
         initElements()
         getBookingDetail()
