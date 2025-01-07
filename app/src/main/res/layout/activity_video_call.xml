@@ -103,7 +103,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_call_options"
-                        android:onClick="onVideoMuteClicked"
                         android:padding="8dp"
                         android:src="@drawable/ic_videocam_on" />
                 </LinearLayout>
